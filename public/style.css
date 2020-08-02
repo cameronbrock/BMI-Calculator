@@ -1,0 +1,81 @@
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+#overhead {
+	/*background-color: black;*/
+	background-image: linear-gradient(#8f8f8f, #000000);
+	height: 100px;
+	width: 100%;
+}
+
+#logo {
+	background-color: blue;
+	color: white;
+	font-size: xxx-large;
+	line-height: 200%;
+	margin-left: 5%;
+	width: 30%;
+	font-family: 'Varta', sans-serif;
+	float: left;
+}
+
+#unit-toggle {
+	background-color: red;
+	
+	height: 40%;
+	width: 10%;
+	float: left;
+	
+	margin-left: 5%;
+	margin-top: 2%;
+	
+	background-color: #3b3b3b;
+}
+
+#toggle-text {
+	color: white;
+}
+
+#toggle-text:before {
+	content: 'Imperial';
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url("Images/Background.jfif");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.textbox {
+	
+	height: 20%;
+	width: 76%;
+	border-radius: 8px;
+	opacity: 0.5;
+	
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: auto;
+	
+	/*font-size: xxx-large;*/
+	font-size: 100px;
+}
+
+input[type='text']::placeholder {
+	font-size: 100px;
+	
+}
+
+input:focus, textarea:focus, select:focus{
+	outline: none;
+}
+
