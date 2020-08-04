@@ -1,0 +1,14 @@
+.whatever{
+    background-color: red;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#checkboxes input[type=checkbox]{
+    display: none;
+}
+
+#checkboxes input[type=checkbox]:checked + .whatever{
+    background-color: green;
+}

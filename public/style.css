@@ -21,26 +21,66 @@ html, body {
 	font-family: 'Varta', sans-serif;
 	float: left;
 }
-
-#unit-toggle {
-	background-color: red;
+/*
+.switch {
 	
-	height: 40%;
-	width: 10%;
+	background-color: purple;
+	width: 100px;
+	height: 50px;
+	
+	padding-left: 0px;
+	
+	margin-left: 5px;
+	margin-bottom: 30px;
+	
 	float: left;
 	
-	margin-left: 5%;
-	margin-top: 2%;
+}
+*/
+.switch-chck-bx {
 	
-	background-color: #3b3b3b;
+	width: 0;
+	height: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	
 }
 
-#toggle-text {
-	color: white;
+.switch {
+
+	background-color: purple;
+	
+    display: inline-block;
+	
+	width: 100px;
+	height: 50px;
+	
+	margin-left: 5px;
+	margin-bottom: 30px;
+	
+	float: left;
+	
 }
 
-#toggle-text:before {
-	content: 'Imperial';
+.slider {
+	background-color: yellow;
+	
+	width: 50%;
+	height: 100%;
+	
+	margin-left: 0%;
+	margin-right: auto;
+}
+
+/*
+.switch-chck-bx:checked + .switch {
+	background-color: yellow;
+}
+*/
+
+.switch-chck-bx:checked + .switch .slider {
+	margin-right: 0%;
+	margin-left: auto;
 }
 
 html {
@@ -60,7 +100,7 @@ body {
 	height: 20%;
 	width: 76%;
 	border-radius: 8px;
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 	
 	margin-top: 5%;
 	margin-left: 10%;
