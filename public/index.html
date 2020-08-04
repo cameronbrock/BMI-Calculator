@@ -4,19 +4,30 @@
 <head>
 	<title>BMI Calculator</title>
 	<link rel = 'stylesheet' href = 'style.css'>
+	<link rel = 'stylesheet' href = 'switch.css'>
 	<link href="https://fonts.googleapis.com/css2?family=Varta:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	
+	<!-- Overhead bar -->
 	<div id = 'overhead'>
 		<div id = 'logo'>BMI Calculator</div>
 		
-		<!-- Unit system toggle switch -->
-		<input type = 'checkbox' class = 'switch-chck-bx' id = 'sw1' />
-		<label class = 'switch' for = 'sw1'>
-			<div class = 'slider'></div>
-		</label>
+		<div id = 'unit-select'>
+			
+			<!-- Unit system toggle switch -->
+			<input type = 'checkbox' class = 'switch-chck-bx' id = 'sw1' />
+			<label class = 'switch' for = 'sw1'>
+				<div class = 'slider'></div>
+			</label>
+			
+			<!-- Unit system of measurement used. -->
+			<div id = 'unit-display'>Measurements:
+				<span id = 'units'></span>
+			</div>
+			
+		</div>
 		
 	</div>
 	<input type = 'text' class = 'textbox' placeholder = 'Height'>

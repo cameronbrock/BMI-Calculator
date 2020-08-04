@@ -1,0 +1,52 @@
+
+.switch-chck-bx {
+	
+	width: 0;
+	height: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+}
+
+.switch {
+
+	background-color: purple;
+	
+    display: inline-block;
+	
+	width: 60px;
+	height: 30px;
+	
+	border-radius: 25px;
+	
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	
+	float: right;
+	
+}
+
+.slider {
+	background-color: yellow;
+	
+	width: 50%;
+	height: 100%;
+	
+	margin-left: 0%;
+	margin-right: auto;
+	
+	border-radius: 25px;
+	
+}
+/*
+.switch-chck-bx:checked + #unit-display #units::after {
+	content: 'TEST';
+}
+*/
+.switch-chck-bx:checked + .switch .slider {
+	margin-right: 0%;
+	margin-left: auto;
+	
+	transition-duration: 1s;
+}
