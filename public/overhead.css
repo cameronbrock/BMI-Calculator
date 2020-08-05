@@ -1,0 +1,23 @@
+
+#overhead {
+	position: fixed;
+	top: 0;
+	height: 100px;
+	/*height: 15%;*/
+	
+	width: 100%;
+	background-image: linear-gradient(#c933ff, #D037E6);
+	/*background-color: red;*/
+}
+
+#logo {
+	color: white;
+	font-size: xxx-large;
+	
+	margin-top: 2%;
+	margin-left: 5%;
+	width: 300px;
+	float: left;
+	
+	position: fixed;
+}

@@ -5,7 +5,9 @@
 	<title>BMI Calculator</title>
 	
 	<link rel = 'stylesheet' href = 'style.css'>
+	<link rel = 'stylesheet' href = 'overhead.css'>
 	<link rel = 'stylesheet' href = 'switch.css'>
+	<link rel = 'stylesheet' href = 'exit.css'>
 	
 	<link href="https://fonts.googleapis.com/css2?family=Varta:wght@600&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -29,7 +31,7 @@
 		
 			<!-- Unit system indicator. -->
 			<div id = 'unit-display'>Unit system:
-				<span id = 'units'>Imperial</span>
+				<span id = 'units'></span>
 			</div>
 		
 			<!-- Unit system toggle switch -->
@@ -40,23 +42,42 @@
 		</div>
 		
 		<div id = 'input-imperial'>
-			<!-- Input height. -->
-			<div class = 'page-element'>
-				<input type = 'text' placeholder = 'Height (ft.)' />
-			</div>
 			
 			<!-- Input height. -->
 			<div class = 'page-element'>
-				<input type = 'text' placeholder = 'Height (ft.)' />
+				<input type = 'text' class = 'textbox' placeholder = 'Height (ft.)'>
+				<input type = 'text' class = 'textbox' style = 'width: 300px;' placeholder = 'Height (in.)'>
+			</div>
+			<div class = 'page-element'>
+				<input type = 'text' class = 'textbox' placeholder = 'Weight (lbs.)'>
 			</div>
 		</div>
 		
-		<div id = 'input-metric'><h1>Input metric (TODO)</h1></div>
+		<div id = 'input-metric'>
+			<div class = 'page-element'>
+				<input type = 'text' class = 'textbox' placeholder = 'Height (cm.)'>
+			</div>
+			<div class = 'page-element'>
+				<input type = 'text' class = 'textbox' placeholder = 'Weight (kg.)'>
+			</div>
+		</div>
 		
 		<!-- Submit button. -->
 		<div class = 'page-element'>
 			<button id = 'submit-button' href = '#'></button>
 		</div>
+
+		
+		<!-- Results -->
+		<div id = 'results'>
+			<!-- div id = 'exit'></div -->
+			<div class = 'page-element'>
+				<h1>Your BMI is 3000 you fat fuck.</h1>
+				<h1>Maybe go on a diet you fucking douche.</h1>
+				<h1>God I hate my life.</h1>
+			</div>
+		</div>
+		
 	</div>
 	
 </body>
