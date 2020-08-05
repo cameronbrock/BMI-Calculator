@@ -13,24 +13,39 @@
 	<!-- Overhead bar -->
 	<div id = 'overhead'>
 		<div id = 'logo'>BMI Calculator</div>
+	</div>
+	
+	<!-- Main page element -->
+	<div id = 'page'>
+	
+		<div class = 'page-element'><h1>BMI Calculator</h1></div>
 		
-		<div id = 'unit-select'>
-			
+		<!-- Change the unit system. -->
+		<div class = 'page-element'>
+		
+			<!-- Unit system indicator. -->
+			<div id = 'unit-display'>Unit system:
+				<span id = 'units'></span>
+			</div>
+		
 			<!-- Unit system toggle switch -->
 			<input type = 'checkbox' class = 'switch-chck-bx' id = 'sw1' />
 			<label class = 'switch' for = 'sw1'>
 				<div class = 'slider'></div>
 			</label>
-			
-			<!-- Unit system of measurement used. -->
-			<div id = 'unit-display'>Measurements:
-				<span id = 'units'></span>
-			</div>
-			
 		</div>
 		
+		<!-- Input height. -->
+		<div class = 'page-element'>
+			<input type = 'text' placeholder = 'Height (ft.)' />
+		</div>
+		
+		<!-- Submit button. -->
+		<div class = 'page-element'>
+			<button id = 'submit-button' href = '#' onclick = 'alert("TEST");'></button>
+		</div>
 	</div>
-	<input type = 'text' class = 'textbox' placeholder = 'Height'>
+	
 </body>
 
 </html>

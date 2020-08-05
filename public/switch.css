@@ -10,7 +10,7 @@
 
 .switch {
 
-	background-color: purple;
+	background-color: #c933ff;
 	
     display: inline-block;
 	
@@ -19,16 +19,14 @@
 	
 	border-radius: 25px;
 	
-	margin-top: 30px;
 	margin-left: 20px;
-	margin-bottom: 30px;
 	
-	float: right;
+	float: left;
 	
 }
 
 .slider {
-	background-color: yellow;
+	background-color: #ff5533;
 	
 	width: 50%;
 	height: 100%;
@@ -37,16 +35,40 @@
 	margin-right: auto;
 	
 	border-radius: 25px;
+
+	transition: .1s;
 	
 }
-/*
-.switch-chck-bx:checked + #unit-display #units::after {
-	content: 'TEST';
+
+.slider:after {
+	transition: 1s;
 }
-*/
+
 .switch-chck-bx:checked + .switch .slider {
-	margin-right: 0%;
-	margin-left: auto;
-	
-	transition-duration: 1s;
+	transform: translateX(100%);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
