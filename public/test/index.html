@@ -1,17 +1,24 @@
-<!doctype html>
 <html>
 <head>
-	<link href = 'style.css' rel = 'stylesheet'>
+<title>jQuery Hello World</title>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 </head>
 
 <body>
 
-<div id="button">
-    <label for="toggle">
-        <h3>button</h3>
-    </label>
-    <input id="toggle" type="checkbox"/>
-    <div id="two">Content</div>
+<script type="text/javascript">
+
+$(document).ready(function(){
+ $("#msgid").html("This is Hello World by JQuery");
+});
+
+</script>
+
+This is Hello World by HTML
+
+<div id="msgid">
 </div>
 
 </body>
