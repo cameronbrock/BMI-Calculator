@@ -1,10 +1,56 @@
 
-#exit {
+#exit-button {
+	
+	background-image: linear-gradient(#cc1b0e, #eb4034);
+	/*background-color: red;*/
+	border-radius: 10px;
+	
+	color: white;
+	font-size: large;
 	
 	width: 100px;
-	height: 100px;
-	background-color: red;
-	color: green;
+	height: 65px;
+	
+	outline: none;
+	border: none;
+	
+	margin-top: -75px;
+	margin-right: 50px;
+	
 	float: right;
 	
+	transition: .1s;
+	
 }
+
+#exit-button:after {
+	content: 'Clear';
+}
+
+#exit-button:hover {
+	background-image: linear-gradient(#eb4034, #cc1b0e);
+	cursor: pointer;
+	transform: translateY(-5px);
+}
+
+/*
+#submit-button {
+		
+	background-image: linear-gradient(#0056d6, #3385ff);
+	border-radius: 10px;
+	
+	color: white;
+	font-size: large;
+	
+	width: 100px;
+	height: 65px;
+	
+	outline: none;
+	border: none;
+	
+	margin-bottom: 50px;
+	
+	transition: .1s;
+	
+}
+*/

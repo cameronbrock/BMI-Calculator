@@ -31,5 +31,10 @@ $('document').ready(() => {
 		});
 	});
 	
+	// When exit icon is clicked, remove results.
+	$('#exit-button').click(() => {
+		$('#results').fadeOut(fade_time);
+	});
+	
 });
 

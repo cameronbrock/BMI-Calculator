@@ -57,6 +57,7 @@ body {
 	
 	margin-top: 150px;
 	margin-left: 15%;
+	margin-bottom: 100px;
 	
 	border-radius: 25px;
 	
@@ -94,6 +95,8 @@ input:focus, textarea:focus, select:focus{
 	
 	margin-bottom: 50px;
 	
+	transition: .1s;
+	
 }
 
 #submit-button:after {
@@ -104,6 +107,7 @@ input:focus, textarea:focus, select:focus{
 	/*background-color: #0046ad;*/
 	background-image: linear-gradient(#3385ff, #0056d6);
 	cursor: pointer;
+	transform: translateY(-5px);
 }
 
 #submit-button:target {
