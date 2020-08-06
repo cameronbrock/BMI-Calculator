@@ -12,8 +12,8 @@
 	
     display: inline-block;
 	
-	width: 60px;
-	height: 30px;
+	width: 70px;
+	height: 35px;
 	
 	border-radius: 25px;
 	
@@ -23,6 +23,12 @@
 	
 	cursor: pointer;
 	
+	transition: .1s;
+	
+}
+
+.switch:hover {
+	transform: translateY(-3px);
 }
 
 .slider {
@@ -47,28 +53,4 @@
 .switch-chck-bx:checked + .switch .slider {
 	transform: translateX(100%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

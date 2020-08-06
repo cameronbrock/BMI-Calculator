@@ -26,6 +26,28 @@ $('document').ready(() => {
 	
 	// When form is submitted, show the results in the #results div.
 	$('#submit-button').click(() => {
+		
+		// Send post request to server.
+		var resp_received = false;
+		var post_data = {
+			unit_sys: 'Imperial',
+			height_ft: parseFloat( $('#height_ft_imp').val() ),
+			height_in: parseFloat( $('#height_in_imp').val() ),
+			weight_lbs: parseFloat( $('#weight_imp').val() )
+		};
+		$('#BMI-info').html(post_data.unit_sys);
+		
+		var post_request = {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(post_data)
+		};
+		
+		fetch('/', post_request);
+		
+		// Fade out original results and fade in new results.
 		$('#results').fadeOut(fade_time, () => {
 			$('#results').fadeIn(fade_time);
 		});
@@ -37,4 +59,5 @@ $('document').ready(() => {
 	});
 	
 });
+
 

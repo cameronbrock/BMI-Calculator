@@ -24,7 +24,7 @@
 	<!-- Main page element -->
 	<div id = 'page'>
 	
-		<div class = 'page-element'><h1>BMI Calculator</h1></div>
+		<div id = 'test' class = 'page-element'><h1>BMI Calculator</h1></div>
 		
 		<!-- Change the unit system. -->
 		<div class = 'page-element'>
@@ -41,18 +41,20 @@
 			</label>
 		</div>
 		
+		<!-- Input for imperial unit system. -->
 		<div id = 'input-imperial'>
 			
 			<!-- Input height. -->
 			<div class = 'page-element'>
-				<input type = 'text' class = 'textbox' placeholder = 'Height (ft.)'>
-				<input type = 'text' class = 'textbox' style = 'width: 300px;' placeholder = 'Height (in.)'>
+				<input id = 'height_ft_imp' type = 'text' class = 'textbox' placeholder = 'Height (ft.)'>
+				<input id = 'height_in_imp' type = 'text' class = 'textbox' style = 'width: 300px;' placeholder = 'Height (in.)'>
 			</div>
 			<div class = 'page-element'>
-				<input type = 'text' class = 'textbox' placeholder = 'Weight (lbs.)'>
+				<input id = 'weight_imp' type = 'text' class = 'textbox' placeholder = 'Weight (lbs.)'>
 			</div>
 		</div>
 		
+		<!-- Input for metric unit system. -->
 		<div id = 'input-metric'>
 			<div class = 'page-element'>
 				<input type = 'text' class = 'textbox' placeholder = 'Height (cm.)'>
@@ -65,14 +67,13 @@
 		
 		<!-- Submit button. -->
 		<div class = 'page-element'>
-			<button id = 'submit-button' href = '#'></button>
+			<button type = 'submit' id = 'submit-button' href = '#'></button>
 		</div>
-
 		
 		<!-- Results -->
 		<div id = 'results'>
 			<button id = 'exit-button' href = '#'></button>
-			<div class = 'page-element'>
+			<div id = 'BMI-info' class = 'page-element'>
 				<h1>Your BMI is 3000 you fat fuck.</h1>
 				<h1>Maybe go on a diet you fucking douche.</h1>
 				<h1>God I hate my life.</h1>
