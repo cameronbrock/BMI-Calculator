@@ -26,9 +26,13 @@
 	transition: .1s;
 	
 }
-
+/*
 .switch:hover {
 	transform: translateY(-3px);
+}
+*/
+.switch:hover {
+	transform: scale(1.15);
 }
 
 .slider {

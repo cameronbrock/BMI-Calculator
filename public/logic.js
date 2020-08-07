@@ -29,12 +29,21 @@ $('document').ready(() => {
 		
 		// Send post request to server.
 		var resp_received = false;
-		var post_data = {
-			unit_sys: 'Imperial',
-			height_ft: parseFloat( $('#height_ft_imp').val() ),
-			height_in: parseFloat( $('#height_in_imp').val() ),
-			weight_lbs: parseFloat( $('#weight_imp').val() )
-		};
+		if ($('#sw1').prop('checked')) {
+			var post_data = {
+				unit_sys: 'Metric',
+				height_cm: parseFloat( $('#height_metric').val() ),
+				weight_kg: parseFloat( $('#weight_metric').val() )
+			};
+		}
+		else {
+			var post_data = {
+				unit_sys: 'Imperial',
+				height_ft: parseFloat( $('#height_ft_imp').val() ),
+				height_in: parseFloat( $('#height_in_imp').val() ),
+				weight_lbs: parseFloat( $('#weight_imp').val() )
+			};
+		}
 		$('#BMI-info').html(post_data.unit_sys);
 		
 		var post_request = {

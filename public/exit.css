@@ -30,7 +30,8 @@
 #exit-button:hover {
 	background-image: linear-gradient(#eb4034, #cc1b0e);
 	cursor: pointer;
-	transform: translateY(-5px);
+	/*transform: translateY(-5px);*/
+	transform: scale(1.15);
 }
 
 

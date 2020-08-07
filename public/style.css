@@ -106,7 +106,8 @@ input:focus, textarea:focus, select:focus{
 	/*background-color: #0046ad;*/
 	background-image: linear-gradient(#3385ff, #0056d6);
 	cursor: pointer;
-	transform: translateY(-5px);
+	/*transform: translateY(-5px);*/
+	transform: scale(1.15);
 }
 
 #submit-button:target {

@@ -20,4 +20,11 @@
 	float: left;
 	
 	position: fixed;
+	
+	transition: .1s;
+	cursor: pointer;
+}
+
+#logo:hover {
+	transform: scale(1.15);
 }
