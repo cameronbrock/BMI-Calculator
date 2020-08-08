@@ -1,9 +1,11 @@
 
 .switch-chck-bx {
+	/*
 	width: 0;
 	height: 0;
 	box-sizing: border-box;
 	overflow: hidden;
+	*/
 }
 
 .switch {
