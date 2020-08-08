@@ -114,3 +114,7 @@ input:focus, textarea:focus, select:focus{
 	background-image: linear-gradient(red, green);
 }
 
+#results {
+	margin-bottom: 100px;
+}
+
