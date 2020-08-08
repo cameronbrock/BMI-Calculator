@@ -60,8 +60,6 @@ app.get('/', (req, res) => {
 io.sockets.on('connection', (socket) => {
 
 	socket.on('bmi-submit', (hw_data) => {
-		console.log('Received height/weight data.');
-		console.log('Weight = ' + hw_data.weight_lbs);
 		
 		var unit_sys = hw_data.unit_sys;
 		if (unit_sys == 'Imperial') {
@@ -75,7 +73,6 @@ io.sockets.on('connection', (socket) => {
 		var BMI = compute_BMI(height, weight, unit_sys);
 		var BMI_class = classify_BMI(BMI);
 		
-		console.log('Computed BMI = ' + BMI);
 		socket.emit('bmi-result', {
 			bmi: BMI,
 			classification: BMI_class

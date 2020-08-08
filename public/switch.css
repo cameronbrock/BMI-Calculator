@@ -1,11 +1,9 @@
 
 .switch-chck-bx {
-	/*
 	width: 0;
 	height: 0;
 	box-sizing: border-box;
 	overflow: hidden;
-	*/
 }
 
 .switch {
@@ -28,11 +26,7 @@
 	transition: .1s;
 	
 }
-/*
-.switch:hover {
-	transform: translateY(-3px);
-}
-*/
+
 .switch:hover {
 	transform: scale(1.15);
 }

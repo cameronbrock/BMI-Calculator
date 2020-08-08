@@ -38,10 +38,9 @@ $('document').ready(() => {
 	// When form is submitted, show the results in the #results div.
 	$('#submit-button').click(() => {
 		
-		// Send post request to server.
+		// Send information to server.
 		if ($('#sw1').prop('checked')) {
 			// If unit system is Metric.
-			alert('CHECKED');
 			if ($('#height_metric').val() && $('#weight_metric').val()) {
 				var hw_data = {
 					unit_sys: 'Metric',
@@ -56,7 +55,6 @@ $('document').ready(() => {
 			
 		}
 		else {
-			//alert('UNCHECKED');
 			// If unit system is Imperial.
 			if ($('#height_ft_imp').val() && $('#height_in_imp').val() && $('#weight_imp').val()) {
 				var hw_data = {
