@@ -1,8 +1,0 @@
-[type="checkbox"]:checked + #two {
-    display:block;
-    left:0px;
-    height:100px;
-}
-[type="checkbox"] {
-    display:none;
-}
