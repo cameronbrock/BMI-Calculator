@@ -4,7 +4,7 @@ const parser = require('body-parser');
 const socketIO = require('socket.io');
 
 const app = express();
-const port_num = 1337;
+const port_num = process.env.PORT || 3000;
 
 var json_parser = parser.json();
 
