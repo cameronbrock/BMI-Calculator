@@ -2,7 +2,6 @@
 #exit-button {
 	
 	background-image: linear-gradient(#cc1b0e, #eb4034);
-	/*background-color: red;*/
 	border-radius: 10px;
 	
 	color: white;
@@ -30,7 +29,6 @@
 #exit-button:hover {
 	background-image: linear-gradient(#eb4034, #cc1b0e);
 	cursor: pointer;
-	/*transform: translateY(-5px);*/
 	transform: scale(1.15);
 }
 

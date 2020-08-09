@@ -69,6 +69,7 @@ body {
 .page-element {
 	margin-top: 30px;
 	margin-left: 5%;
+	margin-right: 5%;
 	font-size: large;
 }
 
@@ -115,8 +116,9 @@ input:focus, textarea:focus, select:focus{
 }
 
 #results {
+	display: inline-block;
 	margin-left: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 10px;
 }
 
 #BMI-val {
